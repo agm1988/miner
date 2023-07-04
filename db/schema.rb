@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_05_105728) do
-
+ActiveRecord::Schema[7.0].define(version: 2019_10_05_105728) do
   create_table "events", force: :cascade do |t|
     t.integer "employee_id"
-    t.datetime "timestamp"
+    t.datetime "timestamp", precision: nil
     t.integer "kind"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
